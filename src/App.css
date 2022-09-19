@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: 40px 1fr 400px;
+}
+.postsList{
+  display: grid;
+  place-items: center;
+  padding: 0rem;
+}
+.nav{
+  display: grid;
+  font-size: 30px;
+  padding: 1.8rem 4rem;
+  gap: 2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.244);
+  height: 400px;
+}
+.singlePost{
+  display: grid;
+  place-items: center;
+  padding-left: 8rem;
+  padding-top: 4rem;
+}
+.editInput{
+  width: 10px;
+  border-radius: 4px;
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.123);
+}
+.editInput:hover{
+  width: 100px;
+}
+.posts{
+  border-top: 1px solid rgba(0, 0, 0, 0.283);
+  width: 500px;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
+.postContent{
+  color: rgba(0, 0, 0, 0.846);
+  text-overflow:ellipsis;
+  width: 500px;
+}
+button{
+  padding: 10px;
+  background-color: rgba(0, 255, 255, 0.185);
+  border: none;
+}
+.commentPost{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  background-color: rgba(128, 128, 128, 0.182);
+  border-radius: 4px;
+  padding: .4rem;
+}
+.commentsTag{
+  color: gray;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.19);
+}
